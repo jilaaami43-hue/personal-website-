@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<form action="/sec.html">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Fredoka', sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: url("/k.jpg") no-repeat center center/cover;
+
+/* Dark overlay for readability */
+body::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background: rgba(255, 182, 193, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.login-container{
+    position:relative;
+    background: rgba(255,255,255,0.85);
+    padding:40px;
+    width:340px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+    z-index:1;
+}
+
+h1{
+    font-family:'Pacifico', cursive;
+    color:#ff69b4;
+    margin-bottom:20px;
+}
+
+.input-box{
+    margin:15px 0;
+}
+
+.input-box input{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:20px;
+    background:#f2f2f2;
+    outline:none;
+    transition:0.3s;
+}
+
+.input-box input:focus{
+    background:#ffe6f2;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    border:none;
+    border-radius:25px;
+    background:#baffc9;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#ffb6d9;
+    transform:scale(1.05);
+}
+
+.extra{
+    margin-top:15px;
+    font-size:13px;
+}
+
+.extra a{
+    text-decoration:none;
+    color:#ff69b4;
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-container">
+    <h1>Welcome </h1>
+
+    <form>
+        <div class="input-box">
+            <input type="text" placeholder="Username" required>
+        </div>
+
+        <div class="input-box">
+            <input type="password" placeholder="Password" required>
+        </div>
+
+        <button type="submit">Login </button>
+    </form>
+
+    <div class="extra">
+        <p>Don't have an account? <a href="#">Sign up</a></p>
+    </div>
+</div>
+
+</body>
+</html>
